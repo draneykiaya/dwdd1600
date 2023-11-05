@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="author" content="Kiaya Draney"/>
+    <meta name="description" content="Explore Utah is dedicated to helping you get around without breaking a sweat."/>
+    <meta charset="UTF-8">
+    <title>Explore Utah: Trip Ideas</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Exo+2&family=Josefin+Sans:ital,wght@0,600;1,200&family=Lora&family=Oxygen:wght@300;400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="exploreutah.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <img src="images/mountain.png" site="logo" width="87" height="51">
+        <div>
+        <h1>Explore Utah</h1>
+        <p>Experts at adventure</p>
+        </div>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+        <!-- start the page main -->
+        <main>
+            <h2>Have a question?</h2>
+            <!-- beginning of form -->
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+            <legend>Customer Information</legend>
+            <label> First Name *<input type="text" name="fname" required></label>
+            <label> Last Name *<input type="text" name="lname" required></label>
+            <label> Contact Number *<input type="tel" name="phone" required placeholder="000-000-0000"></label>
+            <label> Email *<input type="email" name="email" required></label>
+    
+            </fieldset>
+    
+            <fieldset>
+            <legend>How would you like us to reach out?</legend>
+            <label><input type="radio" name="method" value="drone"> Call</label>
+            <label><input type="radio" name="method" value="cycle"> Text </label>
+            <label><input type="radio" name="method" value="robot"> Email </label>
+            
+            <label>What's the best time to contact you?
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="morning">Between 7:00am and 11:00am</option>
+            <option value="noon">Between 11:00am and 2:00pm</option>
+            <option value="afternoon">Between 2:00pm and 5:00pm</option>
+            <option value="evening">Between 5:00pm and 8:00pm</option>
+            </select>
+            </label>
+            </fieldset>
+    
+            <fieldset>
+            <legend>Subscribe Email</legend>
+            <label><input type="checkbox" name="porch" value="chosen"> Explore Utah's Blog (more frequent)</label>
+            <label><input type="checkbox" name="garage" value="chosen"> News and Events (less frequent)</label>
+            <label><input type="checkbox" name="back deck" value="chosen"> Get Notified on Discounted Tours</label>
+            </fieldset>
+    
+            <label>What are you curious about?
+            <textarea name="Comments" id="" cols="30" rows="10"></textarea>
+    
+            </label>
+    
+            <input type="submit" value="Send Request">
+            </form>
+        </main>
+        
+            
+        </main>
+ 
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;2023 &bull; Explore Utah &bull; <a href="mailto:exploreutah@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+</html>
