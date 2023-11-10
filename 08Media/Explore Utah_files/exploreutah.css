@@ -1,0 +1,294 @@
+/*Prevents problems with different browsers*/
+* {box-sizing: border-box;}
+
+/*header start*/
+body {
+    font-family: 'quicksand';
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+}
+
+header {
+background-color: #F8FBF4;
+padding: 1rem 12%;
+align-items: flex-end;
+}
+header div {
+    padding-left: 1.25vw;
+}
+header h1 {
+    margin: 0;
+    color: #33533A;
+}
+
+header p {
+    margin: 0;
+    color: #557A3E;
+    letter-spacing: 2.37px;
+}
+
+/*Navigation Starts Here*/
+
+/*Small screens - Media query*/
+@media only screen and (max-width:600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform:uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #33533A;
+    }
+    nav .active a {
+        background-color: #33533A;
+        background-image: linear-gradient(to bottom, #33533A, #1b2b1e);
+        color: white;
+    }
+}
+/*Small screens end of media query*/
+
+/*Big screens - Media query*/
+@media only screen and (min-width:601px) {
+    nav {
+        background-color: #62876A;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        display: block;
+        padding: .85rem;
+    }
+    
+    nav li.active a {
+        background-color:#33533A;
+        color: white;
+    }
+    nav a:hover {
+    color: black;
+    }
+}
+/*big screens end of media query*/
+
+
+/*Main Starts Here*/
+
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #33533A;
+}
+
+main p {
+    margin: 0 0 .2rem 0;
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    width: 16rem;
+    border-radius: .5rem;
+}
+main dl dt {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: .5rem 0;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+}
+main address {
+    font-style: italic;
+    padding: 0rem;
+    width: 16rem;
+}
+main h2.calmdown {
+    margin: 0;
+    padding: 5px 0;
+}
+main ol.list a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+main a {
+    color: #33533A;
+}
+main a:hover {
+    color: #abc4ab;
+}
+
+.hero {
+    width: 100%;
+    margin: 0;
+}
+.hero img {
+    width: 100%;
+    height:auto;
+}
+
+/*Gallery Starts Here*/
+
+
+figure.narrows {
+    width: 35%;
+    height: auto;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.narrows img {
+ width: 100%;
+ height: auto;
+}
+
+figure.narrows figcaption {
+    text-align: center;
+    font-size: .75rem;
+    margin: 2% 0 2% 0;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 2% 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #33533A;
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+}
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Form starts here */
+
+.myForm fieldset {
+    border: 1px solid #33533A;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #33533A;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: 0rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel],.myForm [type=email], .myForm textarea  {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #33533A;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: quicksand;
+    font-weight: 200;
+}
+.myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea{
+    margin-top: 6px;
+}
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: #F8FBF4;
+}
+
+.myForm [type=submit] {
+    background-color: #33533A;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 0;
+    font-family: quicksand;
+}
+/*Table start here*/ 
+table.tours {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.tours th {
+    background-color:#33533A;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.tours td {
+    color: #33533A;
+    padding: .4rem 2vw;
+}
+table.tours tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+table.tours tr:hover {
+    background-color: rgba(84,105,31,0.2);
+}
+p.testimonial {
+    padding: 1rem 0px;
+}
+
+/* Footer Starts Here*/
+
+footer {
+background-color: #F8FBF4;
+text-align: center;
+color: #33533A;
+padding: .75rem 0;
+font-size: .9rem;
+font-weight: 600;
+clear:both;
+}
+
+footer a {
+    color: #33533A;
+    letter-spacing: 2px;
+}
+footer.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+header > ul, nav > ul, main, footer > ul {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
